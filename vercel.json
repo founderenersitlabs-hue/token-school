@@ -1,6 +1,13 @@
 {
   "version": 2,
   "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/classes", "dest": "/classes.html" },
+    { "src": "/b2b", "dest": "/b2b.html" },
+    { "src": "/trainer", "dest": "/trainer.html" },
+    { "src": "/pricing", "dest": "/pricing.html" },
+    { "src": "/curriculum", "dest": "/curriculum.html" },
+    { "src": "/(.*\\.html)", "dest": "/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

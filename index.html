@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Token School — AI for CBSE Classes 6–12 | Learn Artificial Intelligence</title>
+<title>Token School — AI for CBSE Classes 6–12 | Trained by Nirav Trivedi</title>
 <meta name="description" content="Token School teaches Artificial Intelligence to CBSE students from Class 6 to 12. Interactive AI labs, video lessons, Python coding, Machine Learning, and more. India's premier AI school for kids."/>
 <meta property="og:title" content="Token School — AI for CBSE Classes 6–12"/>
 <meta property="og:description" content="India's premier AI curriculum for school students. Classes 6-12. Interactive labs, videos, projects & more."/>
@@ -12,6 +12,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 <style>
+/* ─ TRAINER ─ */
+#trainer{background:var(--bg2)}
+.trainer-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:3.5rem;align-items:center}
+.trainer-img-side{position:relative}
+.trainer-avatar{width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#6C63FF 0%,#00E5CC 100%);display:flex;align-items:center;justify-content:center;font-size:6rem;margin:0 auto;box-shadow:0 0 60px rgba(124,92,252,.4),0 0 0 4px rgba(124,92,252,.25),0 0 0 10px rgba(124,92,252,.1);position:relative;overflow:hidden}
+.trainer-avatar::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.12),transparent 60%)}
+.trainer-badge{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--p),var(--c));color:#fff;font-size:.72rem;font-weight:800;padding:.4rem 1.2rem;border-radius:var(--rxx);white-space:nowrap;box-shadow:var(--glow);letter-spacing:.04em}
+.trainer-rings{position:absolute;inset:-20px;border-radius:50%;border:1px solid rgba(124,92,252,.15);animation:trainer-spin 12s linear infinite}
+.trainer-rings:nth-child(2){inset:-40px;border-color:rgba(0,229,204,.1);animation-duration:18s;animation-direction:reverse}
+@keyframes trainer-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.trainer-info{}
+.trainer-eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c);padding:.28rem .9rem;background:rgba(0,229,204,.08);border:1px solid rgba(0,229,204,.25);border-radius:var(--rxx);margin-bottom:1rem}
+.trainer-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;letter-spacing:-.025em;color:var(--tx);margin-bottom:.3rem}
+.trainer-creds{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.cred-tag{font-size:.78rem;font-weight:700;padding:.3rem .85rem;border-radius:var(--rxx);letter-spacing:.04em}
+.cred-b{background:rgba(124,92,252,.12);border:1px solid var(--bd2);color:var(--p2)}
+.cred-m{background:rgba(0,229,204,.1);border:1px solid rgba(0,229,204,.3);color:var(--c)}
+.trainer-bio{font-size:1rem;color:var(--tx2);line-height:1.8;margin-bottom:1.75rem}
+.trainer-stats{display:flex;gap:2rem;flex-wrap:wrap;padding:1.25rem 1.5rem;background:rgba(0,0,0,.3);border:1px solid var(--bd);border-radius:var(--rl)}
+.ts-num{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:900;color:var(--tx);display:block}
+.ts-lab{font-size:.72rem;color:var(--tx3);font-weight:500}
+/* ─ B2B ─ */
+#b2b{background:var(--bg)}
+.b2b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.b2b-card{position:relative;padding:2.25rem 2rem;background:var(--bg3);border:1px solid var(--bd);border-radius:var(--rxl);overflow:hidden;transition:all .4s cubic-bezier(.25,.46,.45,.94)}
+.b2b-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ba1,var(--p)),var(--ba2,var(--c)))}
+.b2b-card:hover{transform:translateY(-8px);border-color:var(--ba1,var(--p));box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 30px var(--bg1,rgba(124,92,252,.2))}
+.b2b-ico{font-size:2.8rem;margin-bottom:1.25rem;display:block}
+.b2b-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.35rem;font-weight:800;color:var(--tx);margin-bottom:.5rem}
+.b2b-tag{display:inline-block;font-size:.68rem;font-weight:700;padding:.22rem .7rem;background:rgba(124,92,252,.1);border:1px solid var(--bd2);border-radius:var(--rxx);color:var(--ba1,var(--p2));margin-bottom:.85rem;letter-spacing:.04em;text-transform:uppercase}
+.b2b-card p{font-size:.9rem;color:var(--tx2);line-height:1.75;margin-bottom:1.5rem}
+.b2b-list{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.75rem}
+.b2b-list li{font-size:.84rem;color:var(--tx);display:flex;align-items:center;gap:.5rem}
+.b2b-list li::before{content:'✦';color:var(--ba1,var(--p));font-size:.7rem;flex-shrink:0}
+.b2b-card .btn{width:100%;justify-content:center;border-radius:var(--rl);padding:.7rem}
+@media(max-width:1024px){.trainer-wrap{grid-template-columns:1fr;text-align:center}.trainer-creds{justify-content:center}.trainer-stats{justify-content:center}.b2b-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.trainer-avatar{width:200px;height:200px;font-size:4.5rem}}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --p:#7C5CFC;--p2:#9B6DFF;--p3:#5B3FD4;
@@ -295,6 +332,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding-top:3.5rem}
     <a href="#classes" class="nav-a" id="nla-classes">Classes</a>
     <a href="#curriculum" class="nav-a" id="nla-curriculum">Curriculum</a>
     <a href="#features" class="nav-a" id="nla-features">Features</a>
+    <a href="#b2b" class="nav-a" id="nla-b2b">B2B</a>
+    <a href="#trainer" class="nav-a" id="nla-trainer">Trainer</a>
     <a href="#reviews" class="nav-a" id="nla-reviews">Reviews</a>
     <a href="#pricing" class="nav-a" id="nla-pricing">Pricing</a>
   </nav>
@@ -606,6 +645,101 @@ prediction = model.<span class="fn">predict</span>([[<span class="num">1</span>,
 </div>
 </section>
 
+<!-- B2B SOLUTIONS -->
+<section class="sec" id="b2b">
+<div class="con">
+  <div class="sh sr">
+    <div class="sh-eye">B2B Solutions</div>
+    <h2 class="sh-t">Bring AI to Every Learner</h2>
+    <p class="sh-s">Whether you are a school, college, or an individual — Token School has a tailored AI training programme for you.</p>
+  </div>
+  <div class="b2b-grid">
+
+    <div class="b2b-card sr" style="--ba1:#6C63FF;--ba2:#00E5CC;--bg1:rgba(108,99,255,.2)">
+      <span class="b2b-ico">🏫</span>
+      <h3>For Schools</h3>
+      <div class="b2b-tag">CBSE · Classes 6–10</div>
+      <p>Integrate a world-class AI curriculum into your school. CBSE-aligned content, teacher dashboards, progress reports, and parent updates — all handled for you.</p>
+      <ul class="b2b-list">
+        <li>Full CBSE AI (Code 417) coverage</li>
+        <li>Teacher training & onboarding</li>
+        <li>Student progress dashboard</li>
+        <li>Bulk licensing & custom branding</li>
+        <li>Parent communication portal</li>
+        <li>Dedicated school success manager</li>
+      </ul>
+      <a href="#cta" class="btn btn-sec">Get School Quote →</a>
+    </div>
+
+    <div class="b2b-card sr" style="--ba1:#00E5CC;--ba2:#6C63FF;--bg1:rgba(0,229,204,.2)">
+      <span class="b2b-ico">🎓</span>
+      <h3>For Colleges</h3>
+      <div class="b2b-tag">UG · PG · Certificate</div>
+      <p>Upskill your students with industry-ready AI skills. Certificate programmes, workshop modules, and semester-long AI electives designed for college environments.</p>
+      <ul class="b2b-list">
+        <li>UG/PG AI elective modules</li>
+        <li>Industry-relevant project tracks</li>
+        <li>Co-branded certificates</li>
+        <li>Faculty enablement sessions</li>
+        <li>Placement-ready AI portfolio</li>
+        <li>Research collaboration options</li>
+      </ul>
+      <a href="#cta" class="btn btn-sec">Get College Quote →</a>
+    </div>
+
+    <div class="b2b-card sr" style="--ba1:#FF6B9D;--ba2:#F7B731;--bg1:rgba(255,107,157,.2)">
+      <span class="b2b-ico">💻</span>
+      <h3>Direct Online Training</h3>
+      <div class="b2b-tag">Live · Self-paced · 1-on-1</div>
+      <p>Learn AI directly from expert Nirav Trivedi — live cohort batches, self-paced courses, or personalised 1-on-1 mentoring sessions. Flexible timing, real projects.</p>
+      <ul class="b2b-list">
+        <li>Live weekend cohort batches</li>
+        <li>Self-paced anytime access</li>
+        <li>1-on-1 mentoring with Nirav</li>
+        <li>Real-world AI project guidance</li>
+        <li>Doubt resolution within hours</li>
+        <li>Completion certificate</li>
+      </ul>
+      <a href="#pricing" class="btn btn-pri">Enroll Now →</a>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- TRAINER -->
+<section class="sec" id="trainer">
+<div class="con">
+  <div class="trainer-wrap">
+    <div class="trainer-img-side sr">
+      <div style="position:relative;width:fit-content;margin:0 auto">
+        <div class="trainer-rings"></div>
+        <div class="trainer-rings"></div>
+        <div class="trainer-avatar">👨‍💻</div>
+        <div class="trainer-badge">⭐ Lead AI Educator</div>
+      </div>
+    </div>
+    <div class="trainer-info sr">
+      <div class="trainer-eyebrow">Meet Your Trainer</div>
+      <h2 class="trainer-name">Nirav Trivedi</h2>
+      <div class="trainer-creds">
+        <span class="cred-tag cred-b">🎓 B.Tech</span>
+        <span class="cred-tag cred-m">📊 MBA</span>
+        <span class="cred-tag cred-b">🤖 AI Educator</span>
+        <span class="cred-tag cred-m">💡 Ed-Tech Leader</span>
+      </div>
+      <p class="trainer-bio">Nirav Trivedi is a B.Tech &amp; MBA qualified technologist and educator with a passion for making Artificial Intelligence accessible to every student in India. With years of experience bridging the gap between industry AI and school-level education, Nirav has designed the Token School curriculum from the ground up — ensuring it is rigorous, engaging, and perfectly suited to CBSE students from Class 6 to 12.<br><br>His teaching style combines real-world industry examples, interactive coding, and storytelling to make even the most complex AI concepts feel natural and exciting. Nirav has trained thousands of students, teachers, and corporate professionals across India.</p>
+      <div class="trainer-stats">
+        <div><span class="ts-num" data-t="5000">0</span><span class="ts-lab">Students Trained</span></div>
+        <div><span class="ts-num" data-t="8">0</span><span class="ts-lab">Years Experience</span></div>
+        <div><span class="ts-num" data-t="50">0</span><span class="ts-lab">Schools Partnered</span></div>
+        <div><span class="ts-num" data-t="98">0</span><span class="ts-lab">% Satisfaction</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
 <!-- CTA -->
 <section id="cta">
   <div class="cta-glow"></div>
@@ -658,12 +792,12 @@ prediction = model.<span class="fn">predict</span>([[<span class="num">1</span>,
       <a href="#curriculum">AI Ethics</a>
     </div>
     <div class="foot-col">
-      <h4>Company</h4>
-      <a href="#">About Us</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-      <a href="#">For Schools</a>
-      <a href="#">Contact</a>
+      <h4>B2B Solutions</h4>
+      <a href="#b2b">For Schools</a>
+      <a href="#b2b">For Colleges</a>
+      <a href="#b2b">Direct Online Training</a>
+      <a href="#trainer">Our Trainer</a>
+      <a href="#">Partner With Us</a>
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
     </div>

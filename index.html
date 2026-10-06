@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Token School — CBSE Classes 6–12 | Learn. Lead. Grow.</title>
+  <meta name="description" content="Token School offers a world-class, interactive CBSE curriculum for students in Classes 6 to 12. Master Maths, Science, Social Studies, English, and more with engaging video lessons, live quizzes, and expert-crafted study material." />
+  <meta name="keywords" content="CBSE, Classes 6-12, Token School, online learning, India, Maths, Science, Social Studies, exam prep, interactive" />
+  <meta property="og:title" content="Token School — CBSE Classes 6–12" />
+  <meta property="og:description" content="World-class CBSE learning for Classes 6–12. Master every subject with interactive lessons, quizzes, and expert guidance." />
+  <meta property="og:image" content="./hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand" id="nav-brand">
+        <span class="nav__logo-icon">🎓</span>
+        <span class="nav__logo-text">Token<span class="accent">School</span></span>
+      </a>
+      <nav class="nav__links" id="nav-links">
+        <a href="#classes" class="nav__link">Classes</a>
+        <a href="#subjects" class="nav__link">Subjects</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#testimonials" class="nav__link">Reviews</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#pricing" class="btn btn--ghost btn--sm" id="nav-login">Login</a>
+        <a href="#pricing" class="btn btn--primary btn--sm" id="nav-cta">Get Started</a>
+      </div>
+      <button class="nav__burger" id="nav-burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <canvas class="hero__particles" id="hero-canvas"></canvas>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge" id="hero-badge">
+          <span class="badge__dot"></span>
+          CBSE Aligned · Classes 6–12
+        </div>
+        <h1 class="hero__title" id="hero-title">
+          Where Every Student<br />
+          <span class="hero__gradient-text">Unlocks Their</span><br />
+          <span class="hero__typewriter" id="typewriter">Full Potential.</span>
+        </h1>
+        <p class="hero__sub" id="hero-sub">
+          Premium interactive learning for CBSE students. Master Mathematics, Science, Social Studies, English &amp; more — with adaptive lessons, live quizzes, and expert mentors.
+        </p>
+        <div class="hero__ctas" id="hero-ctas">
+          <a href="#classes" class="btn btn--primary btn--lg">
+            <span>Explore Classes</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#features" class="btn btn--ghost btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+            <span>Watch Demo</span>
+          </a>
+        </div>
+        <div class="hero__stats" id="hero-stats">
+          <div class="stat">
+            <strong class="stat__num" data-target="50000">0</strong>
+            <span class="stat__label">Students</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong class="stat__num" data-target="1200">0</strong>
+            <span class="stat__label">Video Lessons</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong class="stat__num" data-target="98">0</strong>
+            <span class="stat__label">% Satisfaction</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong class="stat__num" data-target="7">0</strong>
+            <span class="stat__label">Classes (6–12)</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual" id="hero-visual">
+        <div class="hero__img-wrap">
+          <img src="./hero.jpg" alt="Token School students learning" class="hero__img" loading="eager" />
+          <div class="hero__img-glow"></div>
+        </div>
+        <div class="floating-card fc--1">
+          <span class="fc__emoji">🏆</span>
+          <div>
+            <div class="fc__label">Top Scorer</div>
+            <div class="fc__value">Aarav got 98% in Maths!</div>
+          </div>
+        </div>
+        <div class="floating-card fc--2">
+          <span class="fc__emoji">⚡</span>
+          <div>
+            <div class="fc__label">Live Now</div>
+            <div class="fc__value">Class 10 Science — Chapter 3</div>
+          </div>
+        </div>
+        <div class="floating-card fc--3">
+          <span class="fc__emoji">📈</span>
+          <div>
+            <div class="fc__label">Progress</div>
+            <div class="fc__value">72% done this week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>📚 CBSE Aligned</span>
+      <span>🧪 Interactive Labs</span>
+      <span>🎬 1200+ Video Lessons</span>
+      <span>📝 Practice Tests</span>
+      <span>🏆 Exam Preparation</span>
+      <span>🤖 Adaptive Learning</span>
+      <span>👩‍🏫 Expert Educators</span>
+      <span>📊 Progress Tracking</span>
+      <span>🔬 Science Experiments</span>
+      <span>➗ Maths Made Easy</span>
+      <span>🌍 Social Studies</span>
+      <span>📖 English Literature</span>
+      <span>💻 Computer Science</span>
+      <span>📚 CBSE Aligned</span>
+      <span>🧪 Interactive Labs</span>
+      <span>🎬 1200+ Video Lessons</span>
+      <span>📝 Practice Tests</span>
+      <span>🏆 Exam Preparation</span>
+      <span>🤖 Adaptive Learning</span>
+      <span>👩‍🏫 Expert Educators</span>
+      <span>📊 Progress Tracking</span>
+      <span>🔬 Science Experiments</span>
+      <span>➗ Maths Made Easy</span>
+      <span>🌍 Social Studies</span>
+      <span>📖 English Literature</span>
+      <span>💻 Computer Science</span>
+    </div>
+  </div>
+
+  <!-- ===== CLASSES ===== -->
+  <section class="classes section" id="classes">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Choose Your Class</div>
+        <h2 class="section__title">Your Grade, Your Journey</h2>
+        <p class="section__sub">Tailored CBSE curriculum for every class — from foundational concepts to board exam mastery.</p>
+      </div>
+      <div class="classes__grid" id="classes-grid">
+
+        <!-- Class 6 -->
+        <article class="class-card" data-class="6" style="--accent: #6C63FF; --accent-light: #6C63FF22;">
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 6</div>
+            <div class="class-card__icon">🌱</div>
+          </div>
+          <h3 class="class-card__name">The Beginners</h3>
+          <p class="class-card__desc">Foundation of CBSE — Numbers, Basic Science, Our Past, Grammar. Build strong roots.</p>
+          <div class="class-card__subjects">
+            <span>Maths</span><span>Science</span><span>History</span><span>Geography</span><span>English</span><span>Hindi</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>180+</strong><span>Videos</span></div>
+            <div class="cs"><strong>40+</strong><span>Tests</span></div>
+            <div class="cs"><strong>6</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 7 -->
+        <article class="class-card" data-class="7" style="--accent: #FF6B9D; --accent-light: #FF6B9D22;">
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 7</div>
+            <div class="class-card__icon">🔥</div>
+          </div>
+          <h3 class="class-card__name">The Explorers</h3>
+          <p class="class-card__desc">Dive deeper — Integers, Cell Biology, Medieval History, Climate & Ecosystems.</p>
+          <div class="class-card__subjects">
+            <span>Maths</span><span>Science</span><span>History</span><span>Geography</span><span>English</span><span>Civics</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>200+</strong><span>Videos</span></div>
+            <div class="cs"><strong>50+</strong><span>Tests</span></div>
+            <div class="cs"><strong>6</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 8 -->
+        <article class="class-card" data-class="8" style="--accent: #00D4AA; --accent-light: #00D4AA22;">
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 8</div>
+            <div class="class-card__icon">⚡</div>
+          </div>
+          <h3 class="class-card__name">The Builders</h3>
+          <p class="class-card__desc">Algebra, Chemical Reactions, Modern History, Resources & Development. Think bigger.</p>
+          <div class="class-card__subjects">
+            <span>Maths</span><span>Science</span><span>History</span><span>Geography</span><span>English</span><span>Civics</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>220+</strong><span>Videos</span></div>
+            <div class="cs"><strong>60+</strong><span>Tests</span></div>
+            <div class="cs"><strong>6</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 9 -->
+        <article class="class-card class-card--featured" data-class="9" style="--accent: #F7B731; --accent-light: #F7B73122;">
+          <div class="class-card__ribbon">Popular</div>
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 9</div>
+            <div class="class-card__icon">🚀</div>
+          </div>
+          <h3 class="class-card__name">The Innovators</h3>
+          <p class="class-card__desc">Pre-board foundation — Polynomials, Matter, Democratic Politics, Economics. Level up for boards.</p>
+          <div class="class-card__subjects">
+            <span>Maths</span><span>Science</span><span>History</span><span>Geography</span><span>English</span><span>Economics</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>250+</strong><span>Videos</span></div>
+            <div class="cs"><strong>80+</strong><span>Tests</span></div>
+            <div class="cs"><strong>7</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 10 -->
+        <article class="class-card class-card--featured" data-class="10" style="--accent: #FF5E62; --accent-light: #FF5E6222;">
+          <div class="class-card__ribbon">Board Exam</div>
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 10</div>
+            <div class="class-card__icon">🏅</div>
+          </div>
+          <h3 class="class-card__name">The Achievers</h3>
+          <p class="class-card__desc">Board exam mastery — Real Numbers, Light, Nationalism, Carbon & Compounds. Score your best.</p>
+          <div class="class-card__subjects">
+            <span>Maths</span><span>Science</span><span>SST</span><span>English</span><span>Hindi</span><span>Comp. Sci.</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>300+</strong><span>Videos</span></div>
+            <div class="cs"><strong>100+</strong><span>Tests</span></div>
+            <div class="cs"><strong>6</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 11 -->
+        <article class="class-card" data-class="11" style="--accent: #A66CFF; --accent-light: #A66CFF22;">
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 11</div>
+            <div class="class-card__icon">🔭</div>
+          </div>
+          <h3 class="class-card__name">The Scholars</h3>
+          <p class="class-card__desc">Science & Commerce streams — Calculus, Thermodynamics, Accountancy, Macro Economics.</p>
+          <div class="class-card__subjects">
+            <span>Physics</span><span>Chemistry</span><span>Maths</span><span>Biology</span><span>Accounts</span><span>Eco</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>350+</strong><span>Videos</span></div>
+            <div class="cs"><strong>120+</strong><span>Tests</span></div>
+            <div class="cs"><strong>5</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+        <!-- Class 12 -->
+        <article class="class-card class-card--featured" data-class="12" style="--accent: #FF8C42; --accent-light: #FF8C4222;">
+          <div class="class-card__ribbon">JEE/NEET Ready</div>
+          <div class="class-card__top">
+            <div class="class-card__badge">Class 12</div>
+            <div class="class-card__icon">🎯</div>
+          </div>
+          <h3 class="class-card__name">The Masters</h3>
+          <p class="class-card__desc">Board + entrance exams — Electrostatics, Organic Chemistry, Integration, Genetics. Your launchpad.</p>
+          <div class="class-card__subjects">
+            <span>Physics</span><span>Chemistry</span><span>Maths</span><span>Biology</span><span>Accounts</span><span>Eco</span>
+          </div>
+          <div class="class-card__stats">
+            <div class="cs"><strong>400+</strong><span>Videos</span></div>
+            <div class="cs"><strong>150+</strong><span>Tests</span></div>
+            <div class="cs"><strong>5</strong><span>Subjects</span></div>
+          </div>
+          <a href="#pricing" class="class-card__cta">Start Learning →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUBJECTS ===== -->
+  <section class="subjects section" id="subjects">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Curriculum</div>
+        <h2 class="section__title">All Subjects. One Platform.</h2>
+        <p class="section__sub">Expertly crafted content for every CBSE subject — made engaging, interactive, and easy to understand.</p>
+      </div>
+      <div class="subjects__grid">
+        <div class="subject-tile" id="sub-maths">
+          <div class="subject-tile__icon">➗</div>
+          <h3>Mathematics</h3>
+          <p>Algebra · Geometry · Trigonometry · Calculus · Statistics</p>
+          <div class="subject-tile__tag">Classes 6–12</div>
+        </div>
+        <div class="subject-tile" id="sub-science">
+          <div class="subject-tile__icon">🔬</div>
+          <h3>Science</h3>
+          <p>Physics · Chemistry · Biology · Environmental Science</p>
+          <div class="subject-tile__tag">Classes 6–10</div>
+        </div>
+        <div class="subject-tile" id="sub-physics">
+          <div class="subject-tile__icon">⚛️</div>
+          <h3>Physics</h3>
+          <p>Mechanics · Optics · Electrostatics · Modern Physics</p>
+          <div class="subject-tile__tag">Classes 11–12</div>
+        </div>
+        <div class="subject-tile" id="sub-chemistry">
+          <div class="subject-tile__icon">🧪</div>
+          <h3>Chemistry</h3>
+          <p>Organic · Inorganic · Physical · Electrochemistry</p>
+          <div class="subject-tile__tag">Classes 11–12</div>
+        </div>
+        <div class="subject-tile" id="sub-biology">
+          <div class="subject-tile__icon">🧬</div>
+          <h3>Biology</h3>
+          <p>Cell Biology · Genetics · Ecology · Human Physiology</p>
+          <div class="subject-tile__tag">Classes 11–12</div>
+        </div>
+        <div class="subject-tile" id="sub-sst">
+          <div class="subject-tile__icon">🌍</div>
+          <h3>Social Studies</h3>
+          <p>History · Geography · Civics · Economics</p>
+          <div class="subject-tile__tag">Classes 6–10</div>
+        </div>
+        <div class="subject-tile" id="sub-english">
+          <div class="subject-tile__icon">📖</div>
+          <h3>English</h3>
+          <p>Literature · Grammar · Writing · Comprehension</p>
+          <div class="subject-tile__tag">Classes 6–12</div>
+        </div>
+        <div class="subject-tile" id="sub-cs">
+          <div class="subject-tile__icon">💻</div>
+          <h3>Computer Science</h3>
+          <p>Python · Data Structures · Databases · Networks</p>
+          <div class="subject-tile__tag">Classes 10–12</div>
+        </div>
+        <div class="subject-tile" id="sub-eco">
+          <div class="subject-tile__icon">📊</div>
+          <h3>Economics</h3>
+          <p>Macro · Micro · Indian Economy · Statistics</p>
+          <div class="subject-tile__tag">Classes 11–12</div>
+        </div>
+        <div class="subject-tile" id="sub-accounts">
+          <div class="subject-tile__icon">🧾</div>
+          <h3>Accountancy</h3>
+          <p>Financial Statements · Partnership · Company Accounts</p>
+          <div class="subject-tile__tag">Classes 11–12</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Why Token School?</div>
+        <h2 class="section__title">Learning, Reimagined.</h2>
+        <p class="section__sub">Every feature is designed with one goal — making students fall in love with learning.</p>
+      </div>
+      <div class="features__layout">
+        <div class="features__big-card">
+          <div class="big-card__glow"></div>
+          <div class="big-card__icon">🎬</div>
+          <h3 class="big-card__title">HD Video Lessons</h3>
+          <p class="big-card__desc">1200+ expert-recorded HD videos, chapter-wise and concept-wise, with animated explainers and real-world examples. Watch, pause, replay anytime.</p>
+          <div class="big-card__visual">
+            <div class="video-mock">
+              <div class="video-mock__screen">
+                <div class="play-btn-large">▶</div>
+                <div class="video-mock__bar"></div>
+              </div>
+              <div class="video-mock__chapters">
+                <div class="vmch vmch--active">Chapter 1: Introduction</div>
+                <div class="vmch">Chapter 2: Core Concepts</div>
+                <div class="vmch">Chapter 3: Applications</div>
+                <div class="vmch">Chapter 4: Practice</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features__small-cards">
+          <div class="feature-card" id="feat-quiz">
+            <div class="feature-card__icon">🧠</div>
+            <h4>Adaptive Quizzes</h4>
+            <p>AI-powered tests that adapt to your level. Get targeted practice where you need it most.</p>
+          </div>
+          <div class="feature-card" id="feat-notes">
+            <div class="feature-card__icon">📑</div>
+            <h4>Smart Notes & PDFs</h4>
+            <p>Downloadable chapter summaries, formula sheets, and NCERT solutions for every class.</p>
+          </div>
+          <div class="feature-card" id="feat-progress">
+            <div class="feature-card__icon">📈</div>
+            <h4>Progress Dashboard</h4>
+            <p>Visual learning analytics. Track your streaks, scores, and weak areas in real time.</p>
+          </div>
+          <div class="feature-card" id="feat-doubt">
+            <div class="feature-card__icon">💬</div>
+            <h4>Doubt Resolution</h4>
+            <p>Ask doubts anytime. Get answers from expert educators within minutes.</p>
+          </div>
+          <div class="feature-card" id="feat-exam">
+            <div class="feature-card__icon">🏆</div>
+            <h4>Board Exam Prep</h4>
+            <p>Past 10-year question papers, mock exams, and CBSE-pattern tests with detailed solutions.</p>
+          </div>
+          <div class="feature-card" id="feat-offline">
+            <div class="feature-card__icon">📵</div>
+            <h4>Offline Access</h4>
+            <p>Download lessons and study without internet. Learn from anywhere, anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Simple Steps</div>
+        <h2 class="section__title">Start in 3 Easy Steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step" id="step-1">
+          <div class="step__num">01</div>
+          <div class="step__icon">🎯</div>
+          <h3 class="step__title">Choose Your Class</h3>
+          <p class="step__desc">Pick your grade (6–12) and select your preferred subjects or go all-access.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step" id="step-2">
+          <div class="step__num">02</div>
+          <div class="step__icon">📚</div>
+          <h3 class="step__title">Learn Interactively</h3>
+          <p class="step__desc">Watch videos, take quizzes, solve problems, and download notes — all in one place.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step" id="step-3">
+          <div class="step__num">03</div>
+          <div class="step__icon">🚀</div>
+          <h3 class="step__title">Score & Succeed</h3>
+          <p class="step__desc">Track your progress, ace your board exams, and unlock your future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Student Stories</div>
+        <h2 class="section__title">Real Students. Real Results.</h2>
+        <p class="section__sub">Thousands of students have transformed their learning journey with Token School.</p>
+      </div>
+      <div class="testimonials__track" id="testi-track">
+        <div class="testi-card" id="testi-1">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"I went from 68% to 94% in Maths in just 3 months! The video explanations and adaptive quizzes made concepts crystal clear."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg, #6C63FF, #FF6B9D);">A</div>
+            <div>
+              <strong>Aarav Sharma</strong>
+              <span>Class 10, Delhi</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" id="testi-2">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Token School's Science videos are so engaging! I finally understood Photosynthesis and Electrostatics the way my teacher never explained."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg, #00D4AA, #6C63FF);">P</div>
+            <div>
+              <strong>Priya Nair</strong>
+              <span>Class 9, Bangalore</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" id="testi-3">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"The Class 12 Physics and Chemistry content is exceptional. I cracked JEE Advanced with help from Token School's targeted practice."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg, #F7B731, #FF5E62);">R</div>
+            <div>
+              <strong>Rohan Gupta</strong>
+              <span>Class 12, Mumbai</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" id="testi-4">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"My daughter's confidence skyrocketed after joining Token School. The doubt resolution feature is a game changer for parents like me."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg, #A66CFF, #FF8C42);">S</div>
+            <div>
+              <strong>Sunita Reddy</strong>
+              <span>Parent of Class 8 student, Hyderabad</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" id="testi-5">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"SST was my weakest subject. Token School's history videos with animated timelines made it my favourite. Scored 97/100 in boards!"</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg, #6B9FFF, #6C63FF);">M</div>
+            <div>
+              <strong>Meera Iyer</strong>
+              <span>Class 10, Chennai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__controls">
+        <button class="testi-btn" id="testi-prev" aria-label="Previous">‹</button>
+        <div class="testi-dots" id="testi-dots"></div>
+        <button class="testi-btn" id="testi-next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__eyebrow">Simple Pricing</div>
+        <h2 class="section__title">Invest in Your Future</h2>
+        <p class="section__sub">Transparent pricing with no hidden costs. Cancel anytime.</p>
+      </div>
+      <div class="pricing__toggle-wrap">
+        <span class="ptoggle__label">Monthly</span>
+        <label class="ptoggle" for="billing-toggle">
+          <input type="checkbox" id="billing-toggle" />
+          <span class="ptoggle__track"></span>
+        </label>
+        <span class="ptoggle__label">Annual <span class="ptoggle__save">Save 40%</span></span>
+      </div>
+      <div class="pricing__grid">
+        <div class="price-card" id="price-starter">
+          <div class="price-card__head">
+            <div class="price-card__plan">Starter</div>
+            <div class="price-card__badge-plan">Single Class</div>
+          </div>
+          <div class="price-card__amount">
+            <span class="price-card__currency">₹</span>
+            <span class="price-card__num monthly-price">299</span>
+            <span class="price-card__annual annual-price" style="display:none">179</span>
+            <span class="price-card__period">/month</span>
+          </div>
+          <div class="price-card__annual-note annual-note" style="display:none">Billed ₹2,148/year</div>
+          <ul class="price-card__features">
+            <li>✓ 1 Class (your choice)</li>
+            <li>✓ All subjects for that class</li>
+            <li>✓ HD video lessons</li>
+            <li>✓ Chapter-wise tests</li>
+            <li>✓ Downloadable notes</li>
+            <li>✓ Progress dashboard</li>
+            <li class="muted">✗ Doubt resolution</li>
+            <li class="muted">✗ Mock board exams</li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full" id="price-starter-cta">Get Started</a>
+        </div>
+
+        <div class="price-card price-card--featured" id="price-scholar">
+          <div class="price-card__popular">⚡ Most Popular</div>
+          <div class="price-card__head">
+            <div class="price-card__plan">Scholar</div>
+            <div class="price-card__badge-plan">All Classes</div>
+          </div>
+          <div class="price-card__amount">
+            <span class="price-card__currency">₹</span>
+            <span class="price-card__num monthly-price">599</span>
+            <span class="price-card__annual annual-price" style="display:none">359</span>
+            <span class="price-card__period">/month</span>
+          </div>
+          <div class="price-card__annual-note annual-note" style="display:none">Billed ₹4,308/year</div>
+          <ul class="price-card__features">
+            <li>✓ All 7 classes (6–12)</li>
+            <li>✓ All subjects — every class</li>
+            <li>✓ HD video lessons (1200+)</li>
+            <li>✓ Adaptive quiz engine</li>
+            <li>✓ Downloadable notes & PDFs</li>
+            <li>✓ Progress dashboard</li>
+            <li>✓ Doubt resolution</li>
+            <li>✓ Board exam mock tests</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full" id="price-scholar-cta">Start Free Trial</a>
+        </div>
+
+        <div class="price-card" id="price-pro">
+          <div class="price-card__head">
+            <div class="price-card__plan">Pro</div>
+            <div class="price-card__badge-plan">Scholar + Mentoring</div>
+          </div>
+          <div class="price-card__amount">
+            <span class="price-card__currency">₹</span>
+            <span class="price-card__num monthly-price">999</span>
+            <span class="price-card__annual annual-price" style="display:none">599</span>
+            <span class="price-card__period">/month</span>
+          </div>
+          <div class="price-card__annual-note annual-note" style="display:none">Billed ₹7,188/year</div>
+          <ul class="price-card__features">
+            <li>✓ Everything in Scholar</li>
+            <li>✓ 4 live mentor sessions/month</li>
+            <li>✓ Personalised study plan</li>
+            <li>✓ Priority doubt resolution</li>
+            <li>✓ JEE / NEET prep modules</li>
+            <li>✓ Parent progress reports</li>
+            <li>✓ 1-on-1 exam strategy call</li>
+            <li>✓ Certificate on completion</li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full" id="price-pro-cta">Get Pro Access</a>
+        </div>
+      </div>
+      <p class="pricing__note">🔒 100% secure payment · 7-day free trial · Cancel anytime · No credit card required to start</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" id="cta-banner">
+    <div class="cta-banner__glow"></div>
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="cta-banner__text">
+          <h2>Ready to Transform Your Learning?</h2>
+          <p>Join 50,000+ students already learning with Token School. Start your free trial today — no credit card needed.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="#pricing" class="btn btn--white btn--lg" id="cta-banner-btn">Start Free Trial →</a>
+          <div class="cta-banner__trust">
+            <span>⭐ 4.9/5 rating</span>
+            <span>·</span>
+            <span>50,000+ students</span>
+            <span>·</span>
+            <span>7-day free trial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__brand">
+            <span class="nav__logo-icon">🎓</span>
+            <span class="nav__logo-text" style="color:#fff;">Token<span class="accent">School</span></span>
+          </a>
+          <p class="footer__tagline">Empowering CBSE students from Class 6 to 12 with world-class interactive education.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Twitter" class="social-btn" id="footer-twitter">𝕏</a>
+            <a href="#" aria-label="Instagram" class="social-btn" id="footer-instagram">📸</a>
+            <a href="#" aria-label="YouTube" class="social-btn" id="footer-youtube">▶</a>
+            <a href="#" aria-label="LinkedIn" class="social-btn" id="footer-linkedin">in</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Classes</h4>
+          <a href="#classes">Class 6</a>
+          <a href="#classes">Class 7</a>
+          <a href="#classes">Class 8</a>
+          <a href="#classes">Class 9</a>
+          <a href="#classes">Class 10</a>
+          <a href="#classes">Class 11</a>
+          <a href="#classes">Class 12</a>
+        </div>
+        <div class="footer__col">
+          <h4>Subjects</h4>
+          <a href="#subjects">Mathematics</a>
+          <a href="#subjects">Science</a>
+          <a href="#subjects">Physics</a>
+          <a href="#subjects">Chemistry</a>
+          <a href="#subjects">Biology</a>
+          <a href="#subjects">Social Studies</a>
+          <a href="#subjects">English</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Token School. All rights reserved. | CBSE Aligned Curriculum</p>
+        <p>Made with ❤️ in India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

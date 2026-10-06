@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Token School — AI Classes 6 to 12 | CBSE AI Curriculum by Nirav Trivedi</title>
+<meta name="description" content="Explore all 7 AI classes for CBSE students. From AI Beginners (Class 6) to AI Masters (Class 12). Full curriculum, labs, and projects."/>
+<meta property="og:title" content="Token School — AI Classes 6 to 12 | CBSE AI Curriculum by Nirav Trivedi"/>
+<meta name="theme-color" content="#07071A"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#7C5CFC;--p2:#9B6DFF;--p3:#5B3FD4;
+  --c:#00E5CC;--c2:#00BFA5;--pk:#FF6B9D;--am:#FFB627;
+  --bg:#07071A;--bg2:#0D0D2B;--bg3:#12123A;--bg4:#181850;
+  --tx:#F0F0FF;--tx2:#9090C0;--tx3:#5A5A90;
+  --bd:rgba(124,92,252,.15);--bd2:rgba(124,92,252,.3);--bd3:rgba(124,92,252,.55);
+  --r:12px;--rl:20px;--rxl:28px;--rxx:999px;
+  --sh:0 8px 40px rgba(0,0,0,.6);--glow:0 0 40px rgba(124,92,252,.35);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(124,92,252,.35);color:#fff}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--p);border-radius:3px}
+
+/* utils */
+.con{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1rem,5vw,2.5rem)}
+.sec{padding-block:clamp(4rem,8vw,7rem);position:relative;overflow:hidden}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--c);padding:.28rem .9rem;background:rgba(0,229,204,.08);border:1px solid rgba(0,229,204,.25);border-radius:var(--rxx);margin-bottom:.85rem}
+.sh{text-align:center;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.sh h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-.025em;margin-bottom:.85rem}
+.sh p{font-size:clamp(.9rem,1.4vw,1.05rem);color:var(--tx2);max-width:580px;margin-inline:auto;line-height:1.75}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none;border:none;cursor:pointer;border-radius:var(--rxx);transition:all .3s;white-space:nowrap;letter-spacing:.01em}
+.bsm{padding:.5rem 1.2rem;font-size:.85rem}.bmd{padding:.7rem 1.6rem;font-size:.9rem}.blg{padding:.85rem 2rem;font-size:1rem}.bxl{padding:1rem 2.4rem;font-size:1.05rem}
+.bpri{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 4px 20px rgba(124,92,252,.4)}
+.bpri:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(124,92,252,.6)}
+.bsec{background:rgba(124,92,252,.1);color:var(--tx);border:1px solid var(--bd2)}
+.bsec:hover{background:rgba(124,92,252,.2);transform:translateY(-2px)}
+.bout{background:transparent;color:var(--tx);border:1.5px solid var(--bd2)}
+.bout:hover{background:rgba(124,92,252,.1);border-color:var(--p);transform:translateY(-2px)}
+.bwh{background:#fff;color:var(--bg);font-weight:700}
+.bwh:hover{background:#eeeeff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,255,255,.2)}
+.bfull{width:100%;justify-content:center;border-radius:var(--rl)}
+
+/* NAV */
+#topnav{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;display:flex;align-items:center;background:rgba(7,7,26,.7);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--bd);transition:all .3s}
+#topnav.sc{background:rgba(7,7,26,.95);box-shadow:var(--sh)}
+.ni{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1rem,5vw,2.5rem);display:flex;align-items:center;gap:1.5rem}
+.nbrand{display:flex;align-items:center;gap:.6rem;text-decoration:none;flex-shrink:0}
+.nlogo{width:34px;height:34px;background:linear-gradient(135deg,var(--p),var(--c));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.nname{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:1.25rem;color:var(--tx);letter-spacing:-.02em}
+.nname span{color:var(--c)}
+.nlinks{display:flex;align-items:center;gap:.1rem;margin-left:auto}
+.na{padding:.4rem .8rem;font-size:.875rem;font-weight:500;color:var(--tx2);text-decoration:none;border-radius:var(--rxx);transition:.2s}
+.na:hover{color:var(--tx);background:rgba(124,92,252,.1)}
+.na.on{color:var(--p2);background:rgba(124,92,252,.12);font-weight:600}
+.nacts{display:flex;gap:.6rem;align-items:center;flex-shrink:0}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem;margin-left:.5rem}
+.burger span{display:block;width:22px;height:2px;background:var(--tx);border-radius:2px;transition:.2s}
+.mobile-nav{display:none;position:fixed;top:68px;left:0;right:0;z-index:999;background:rgba(7,7,26,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:1rem;flex-direction:column;gap:.2rem}
+.mobile-nav .na{padding:.7rem 1rem;border-radius:var(--rl)}
+
+/* PAGE HERO */
+.ph{padding-top:calc(68px + clamp(3rem,8vw,5rem));padding-bottom:clamp(3rem,7vw,5rem);position:relative;overflow:hidden;text-align:center;background:var(--bg)}
+.ph-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% -10%,rgba(124,92,252,.18) 0%,transparent 65%)}
+.ph-tag{margin-bottom:1.25rem}
+.ph h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-.03em;margin-bottom:1.1rem;position:relative}
+.ph p{font-size:clamp(.95rem,1.5vw,1.15rem);color:var(--tx2);max-width:600px;margin-inline:auto;line-height:1.75;position:relative;margin-bottom:2rem}
+.ph .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding-top:3.5rem}
+.fg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+.fbrand p{font-size:.85rem;color:var(--tx3);line-height:1.7;max-width:260px;margin-top:.75rem;margin-bottom:1.25rem}
+.socs{display:flex;gap:.5rem}
+.soc{width:34px;height:34px;border-radius:50%;background:var(--bg3);border:1px solid var(--bd);color:var(--tx2);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;text-decoration:none;transition:.2s}
+.soc:hover{background:var(--p);color:#fff;border-color:var(--p);transform:translateY(-2px)}
+.fc h4{font-family:'Space Grotesk',sans-serif;font-size:.78rem;font-weight:700;color:var(--tx);margin-bottom:.9rem;letter-spacing:.08em;text-transform:uppercase}
+.fc a{display:block;font-size:.83rem;color:var(--tx3);text-decoration:none;margin-bottom:.45rem;transition:color .2s}
+.fc a:hover{color:var(--tx)}
+.fbot{border-top:1px solid var(--bd);padding-block:1.25rem;display:flex;justify-content:space-between;font-size:.78rem;color:var(--tx3);flex-wrap:wrap;gap:.5rem}
+
+/* Scroll reveal */
+.sr{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.sr.vi{opacity:1;transform:translateY(0)}
+
+/* orbs */
+.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:of 10s ease-in-out infinite;pointer-events:none}
+@keyframes of{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-25px) scale(1.04)}}
+
+/* responsive */
+@media(max-width:1024px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nlinks,.nacts .bout{display:none}.burger{display:flex}.fg{grid-template-columns:1fr}}
+
+.class-card{margin-bottom:1.5rem;background:var(--bg3);border:1px solid var(--bd);border-radius:var(--rxl);overflow:hidden;transition:.35s}
+.class-card:hover{border-color:var(--ca,var(--p));box-shadow:0 16px 50px rgba(0,0,0,.4),0 0 0 1px var(--ca,var(--p))}
+.class-card-top{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.5rem;padding:2rem}
+.class-badge{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.3rem .9rem;background:rgba(124,92,252,.1);border:1px solid var(--bd2);border-radius:var(--rxx);color:var(--p2);white-space:nowrap}
+.class-ico-big{font-size:3rem;width:72px;height:72px;background:linear-gradient(135deg,var(--bg4),var(--bg2));border:1px solid var(--bd2);border-radius:var(--rl);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.class-title-area{}
+.class-title-area h2{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:.25rem}
+.class-tagline2{display:inline-block;font-size:.72rem;font-weight:700;color:var(--ca,var(--p));background:rgba(124,92,252,.08);padding:.18rem .6rem;border-radius:var(--rxx);letter-spacing:.03em}
+.class-meta{display:flex;gap:1.5rem;flex-wrap:wrap}
+.class-meta-item{text-align:center}.class-meta-item strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:var(--ca,var(--p))}.class-meta-item span{font-size:.7rem;color:var(--tx3)}
+.class-body{padding:0 2rem 2rem}
+.class-desc{font-size:.95rem;color:var(--tx2);line-height:1.75;margin-bottom:1.5rem;padding-top:0}
+.class-modules h4{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.85rem}
+.mod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.65rem;margin-bottom:1.5rem}
+.mod-item{padding:.7rem .9rem;background:rgba(0,0,0,.25);border:1px solid var(--bd);border-radius:var(--r);font-size:.82rem;color:var(--tx);display:flex;align-items:center;gap:.5rem}
+.mod-dot{width:6px;height:6px;border-radius:50%;background:var(--ca,var(--p));flex-shrink:0}
+.class-cta-row{display:flex;gap:1rem;align-items:center;padding-top:1.25rem;border-top:1px solid var(--bd)}
+@media(max-width:768px){.class-card-top{grid-template-columns:1fr;gap:1rem}.class-meta{gap:1rem}}
+</style>
+</head>
+<body>
+
+<header id="topnav">
+  <div class="ni">
+    <a href="/index.html" class="nbrand"><div class="nlogo">🤖</div><span class="nname">Token<span>School</span></span></a>
+    <nav class="nlinks">
+      <a href="/index.html" class="na ">Home</a>
+      <a href="/classes.html" class="na on">Classes</a>
+      <a href="/curriculum.html" class="na ">Curriculum</a>
+      <a href="/b2b.html" class="na ">B2B</a>
+      <a href="/trainer.html" class="na ">Trainer</a>
+      <a href="/pricing.html" class="na ">Pricing</a>
+    </nav>
+    <div class="nacts">
+      <a href="/pricing.html" class="btn bout bsm">Login</a>
+      <a href="/pricing.html" class="btn bpri bsm">Get Started →</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mnav">
+    <a href="/index.html" class="na ">Home</a>
+    <a href="/classes.html" class="na on">Classes</a>
+    <a href="/curriculum.html" class="na ">Curriculum</a>
+    <a href="/b2b.html" class="na ">B2B Solutions</a>
+    <a href="/trainer.html" class="na ">Our Trainer</a>
+    <a href="/pricing.html" class="na ">Pricing</a>
+    <div style="display:flex;gap:.75rem;margin-top:.5rem;padding:.5rem 0">
+      <a href="/pricing.html" class="btn bout bmd" style="flex:1;justify-content:center">Login</a>
+      <a href="/pricing.html" class="btn bpri bmd" style="flex:1;justify-content:center">Get Started</a>
+    </div>
+  </nav>
+</header>
+
+<section class="ph">
+  <div class="ph-bg"></div>
+  <div class="con" style="position:relative;z-index:1">
+    <div class="ph-tag"><div class="tag">CBSE Classes 6–12</div></div>
+    <h1>All AI Classes</h1>
+    <p>Seven full years of AI education — each class a complete journey from curiosity to mastery.</p>
+    <div class="btns"><a href="/pricing.html" class="btn bpri blg">Enroll Now →</a><a href="/b2b.html" class="btn bsec blg">B2B Solutions</a></div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--bg)">
+<div class="con">
+
+  <div id="c6" class="class-card sr" style="--ca:#6C63FF">
+    <div class="class-card-top">
+      <div class="class-ico-big">🌱</div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 6</div>
+        <h2>AI Beginners</h2>
+        <div class="class-tagline2">What is AI? · Algorithms · Data Patterns · Robots</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>8</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>60+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>15</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Your very first step into Artificial Intelligence. Discover how machines think, learn, and interact — through games, stories, and interactive activities designed for curious 11-year-olds. No prior experience needed.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>What is Artificial Intelligence?</div>
+        <div class="mod-item"><span class="mod-dot"></span>How computers make decisions</div>
+        <div class="mod-item"><span class="mod-dot"></span>Algorithms & problem solving</div>
+        <div class="mod-item"><span class="mod-dot"></span>Data: what it is and why it matters</div>
+        <div class="mod-item"><span class="mod-dot"></span>Patterns and predictions</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI in daily life examples</div>
+        <div class="mod-item"><span class="mod-dot"></span>Robots and automation</div>
+        <div class="mod-item"><span class="mod-dot"></span>Introduction to coding logic</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 6 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c7" class="class-card sr" style="--ca:#00D4AA">
+    <div class="class-card-top">
+      <div class="class-ico-big">🔍</div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 7</div>
+        <h2>AI Explorers</h2>
+        <div class="class-tagline2">ML Basics · Data · AI Domains · Bias & Ethics</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>10</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>70+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>18</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Go deeper — understand Machine Learning paradigms (supervised, unsupervised), how AI uses real data, the different domains of AI (vision, language, robotics), and critically, what makes AI fair or biased.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>Machine Learning overview</div>
+        <div class="mod-item"><span class="mod-dot"></span>Supervised vs unsupervised</div>
+        <div class="mod-item"><span class="mod-dot"></span>Training data and labels</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI vision applications</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI language applications</div>
+        <div class="mod-item"><span class="mod-dot"></span>Bias in AI systems</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI ethics introduction</div>
+        <div class="mod-item"><span class="mod-dot"></span>Mini classification projects</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 7 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c8" class="class-card sr" style="--ca:#FF6B9D">
+    <div class="class-card-top">
+      <div class="class-ico-big">⚡</div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 8</div>
+        <h2>AI Builders</h2>
+        <div class="class-tagline2">No-code AI · Project Lifecycle · Responsible AI</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>12</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>80+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>20</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Build your first real AI models using no-code tools. Learn the complete AI project lifecycle — from problem definition to deployment. Train image classifiers, sentiment analyzers, and explore Responsible AI principles.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>AI project lifecycle</div>
+        <div class="mod-item"><span class="mod-dot"></span>No-code ML tools (Teachable Machine)</div>
+        <div class="mod-item"><span class="mod-dot"></span>Image classification projects</div>
+        <div class="mod-item"><span class="mod-dot"></span>Data collection and cleaning</div>
+        <div class="mod-item"><span class="mod-dot"></span>Model training and testing</div>
+        <div class="mod-item"><span class="mod-dot"></span>Responsible AI framework</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI and privacy</div>
+        <div class="mod-item"><span class="mod-dot"></span>Real-world AI applications</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 8 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c9" class="class-card sr" style="--ca:#F7B731">
+    <div class="class-card-top">
+      <div class="class-ico-big" style="position:relative">🚀<span style="position:absolute;top:-6px;right:-6px;background:linear-gradient(135deg,var(--am),var(--pk));color:#fff;font-size:.6rem;font-weight:800;padding:.15rem .5rem;border-radius:var(--rxx)">HOT</span></div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 9</div>
+        <h2>AI Innovators</h2>
+        <div class="class-tagline2">Python · Decision Trees · Neural Nets · CBSE AI 417</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>15</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>100+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>25</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Real Python coding for AI begins here. Build Machine Learning models from scratch, explore neural networks conceptually, dive into NLP basics, and fully prepare for CBSE AI (Code 417) as an elective subject.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>Python for AI (from scratch)</div>
+        <div class="mod-item"><span class="mod-dot"></span>NumPy and Pandas basics</div>
+        <div class="mod-item"><span class="mod-dot"></span>Decision Trees and Random Forests</div>
+        <div class="mod-item"><span class="mod-dot"></span>Regression models</div>
+        <div class="mod-item"><span class="mod-dot"></span>Neural network intuition</div>
+        <div class="mod-item"><span class="mod-dot"></span>NLP basics and text analysis</div>
+        <div class="mod-item"><span class="mod-dot"></span>Data visualization</div>
+        <div class="mod-item"><span class="mod-dot"></span>CBSE AI 417 full syllabus</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 9 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c10" class="class-card sr" style="--ca:#FF5E62">
+    <div class="class-card-top">
+      <div class="class-ico-big">🏅</div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 10</div>
+        <h2>AI Champions</h2>
+        <div class="class-tagline2">Deep Learning · Computer Vision · NLP · Board Prep</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>15</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>110+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>25</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Board exam mastery + deep AI knowledge. Master CNNs for Computer Vision, RNNs for NLP, build real AI applications, and complete CBSE AI (Code 417) with full past-paper analysis and mock exams.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>Deep Learning foundations</div>
+        <div class="mod-item"><span class="mod-dot"></span>Convolutional Neural Networks</div>
+        <div class="mod-item"><span class="mod-dot"></span>Computer Vision projects</div>
+        <div class="mod-item"><span class="mod-dot"></span>NLP and sentiment analysis</div>
+        <div class="mod-item"><span class="mod-dot"></span>Chatbot building</div>
+        <div class="mod-item"><span class="mod-dot"></span>Model deployment basics</div>
+        <div class="mod-item"><span class="mod-dot"></span>10-year board paper analysis</div>
+        <div class="mod-item"><span class="mod-dot"></span>Mock exams and revision</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 10 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c11" class="class-card sr" style="--ca:#A66CFF">
+    <div class="class-card-top">
+      <div class="class-ico-big">🔭</div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 11</div>
+        <h2>AI Scientists</h2>
+        <div class="class-tagline2">Advanced Python · PyTorch · ML Algorithms · Research</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>18</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>130+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>30</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">Get serious about AI. Advanced Python, statistics for ML, deep dive into supervised/unsupervised algorithms, intro to PyTorch deep learning framework, and conduct real mini research projects.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>Advanced Python & OOP for AI</div>
+        <div class="mod-item"><span class="mod-dot"></span>Statistics and probability for ML</div>
+        <div class="mod-item"><span class="mod-dot"></span>SVM, k-NN, clustering algorithms</div>
+        <div class="mod-item"><span class="mod-dot"></span>Dimensionality reduction (PCA)</div>
+        <div class="mod-item"><span class="mod-dot"></span>Introduction to PyTorch</div>
+        <div class="mod-item"><span class="mod-dot"></span>Advanced data visualization</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI research methodology</div>
+        <div class="mod-item"><span class="mod-dot"></span>Mini research paper writing</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 11 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+  <div id="c12" class="class-card sr" style="--ca:#FF8C42">
+    <div class="class-card-top">
+      <div class="class-ico-big" style="position:relative">🌟<span style="position:absolute;top:-6px;right:-6px;background:linear-gradient(135deg,var(--p),var(--c));color:#fff;font-size:.6rem;font-weight:800;padding:.15rem .5rem;border-radius:var(--rxx)">JEE</span></div>
+      <div class="class-title-area">
+        <div class="class-badge" style="margin-bottom:.5rem">Class 12</div>
+        <h2>AI Masters</h2>
+        <div class="class-tagline2">Generative AI · LLMs · RL · Capstone Projects</div>
+      </div>
+      <div class="class-meta">
+        <div class="class-meta-item"><strong>20</strong><span>AI Labs</span></div>
+        <div class="class-meta-item"><strong>150+</strong><span>Videos</span></div>
+        <div class="class-meta-item"><strong>35</strong><span>Projects</span></div>
+      </div>
+    </div>
+    <div class="class-body">
+      <p class="class-desc">The pinnacle of AI education for school students. Generative AI, Large Language Models, Reinforcement Learning, AI safety, and a full capstone project for college applications and national competitions.</p>
+      <div class="class-modules"><h4>What You'll Learn</h4><div class="mod-grid">
+        <div class="mod-item"><span class="mod-dot"></span>Generative AI foundations</div>
+        <div class="mod-item"><span class="mod-dot"></span>How LLMs (ChatGPT) work</div>
+        <div class="mod-item"><span class="mod-dot"></span>Prompt engineering mastery</div>
+        <div class="mod-item"><span class="mod-dot"></span>GANs and diffusion models</div>
+        <div class="mod-item"><span class="mod-dot"></span>Reinforcement Learning basics</div>
+        <div class="mod-item"><span class="mod-dot"></span>AI safety and alignment</div>
+        <div class="mod-item"><span class="mod-dot"></span>Capstone AI project</div>
+        <div class="mod-item"><span class="mod-dot"></span>Portfolio and competition prep</div>
+      </div></div>
+      <div class="class-cta-row"><a href="/pricing.html" class="btn bpri bmd">Enroll in Class 12 →</a><a href="/curriculum.html" class="btn bsec bmd">Full Curriculum</a></div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="ctab">
+  <div class="ctab-glow"></div>
+  <div class="con"><div class="ctab-i">
+    <div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:.65rem">Want All 7 Classes?</h2><p style="color:var(--tx2)">Get Scholar access — all classes, 500+ lessons, labs, and more at one price.</p></div>
+    <div class="ctab-acts">
+      <a href="/pricing.html" class="btn bwh bxl">View Pricing →</a>
+      <div class="trust"><span>⭐ 4.9/5</span><span>·</span><span>7-day free trial</span><span>·</span><span>Cancel anytime</span></div>
+    </div>
+  </div></div>
+</section>
+
+
+<footer>
+<div class="con">
+  <div class="fg">
+    <div class="fbrand">
+      <a href="/index.html" class="nbrand"><div class="nlogo">🤖</div><span class="nname">Token<span>School</span></span></a>
+      <p>India's premier AI curriculum for CBSE students. Taught by Nirav Trivedi (BTech, MBA). Classes 6–12.</p>
+      <div class="socs">
+        <a href="#" class="soc">𝕏</a><a href="#" class="soc">📷</a><a href="#" class="soc">▶</a><a href="#" class="soc">in</a>
+      </div>
+    </div>
+    <div class="fc">
+      <h4>Classes</h4>
+      <a href="/classes.html">Class 6 — Beginners</a><a href="/classes.html">Class 7 — Explorers</a>
+      <a href="/classes.html">Class 8 — Builders</a><a href="/classes.html">Class 9 — Innovators</a>
+      <a href="/classes.html">Class 10 — Champions</a><a href="/classes.html">Class 11 — Scientists</a>
+      <a href="/classes.html">Class 12 — Masters</a>
+    </div>
+    <div class="fc">
+      <h4>B2B Solutions</h4>
+      <a href="/b2b.html">For Schools</a><a href="/b2b.html">For Colleges</a>
+      <a href="/b2b.html">Direct Training</a><a href="/trainer.html">Our Trainer</a>
+      <a href="/b2b.html#contact">Contact Us</a><a href="/pricing.html">Pricing</a>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <a href="/trainer.html">About Nirav</a><a href="#">Blog</a>
+      <a href="/b2b.html#contact">Partner With Us</a><a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a><a href="/b2b.html#contact">Support</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2025 Token School. All rights reserved. | CBSE AI Curriculum by Nirav Trivedi</p>
+    <p>Built with ❤️ in India 🇮🇳</p>
+  </div>
+</div>
+</footer>
+<script>
+// Nav
+const tn=document.getElementById('topnav');
+window.addEventListener('scroll',()=>tn.classList.toggle('sc',scrollY>40),{passive:true});
+// Burger
+const bg=document.getElementById('burger'),mn=document.getElementById('mnav');
+if(bg&&mn)bg.addEventListener('click',()=>{const o=mn.style.display==='flex';mn.style.display=o?'none':'flex';bg.querySelectorAll('span').forEach((s,i)=>{if(o){s.style.transform='';s.style.opacity=''}else{if(i===0)s.style.transform='rotate(45deg) translate(5px,5px)';if(i===1)s.style.opacity='0';if(i===2)s.style.transform='rotate(-45deg) translate(5px,-5px)'}})});
+// SR
+const sro=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){e.target.style.transitionDelay=i*.055+'s';e.target.classList.add('vi');sro.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.sr').forEach(el=>sro.observe(el));
+// Counters
+const co=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,t=+el.dataset.t,s=performance.now();const r=now=>{const p=Math.min((now-s)/1800,1),ea=1-Math.pow(1-p,3);el.textContent=Math.floor(ea*t).toLocaleString('en-IN');if(p<1)requestAnimationFrame(r);else el.textContent=t.toLocaleString('en-IN')};requestAnimationFrame(r);co.unobserve(el)})},{threshold:.5});
+document.querySelectorAll('[data-t]').forEach(e=>co.observe(e));
+</script>
+</body>
+</html>

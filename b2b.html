@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Token School B2B — AI for Schools & Colleges | Partner with Nirav Trivedi</title>
+<meta name="description" content="Bring world-class AI education to your school, college, or institution. Custom AI curriculum, teacher training, and direct online training by Nirav Trivedi (BTech, MBA)."/>
+<meta property="og:title" content="Token School B2B — AI for Schools & Colleges | Partner with Nirav Trivedi"/>
+<meta name="theme-color" content="#07071A"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#7C5CFC;--p2:#9B6DFF;--p3:#5B3FD4;
+  --c:#00E5CC;--c2:#00BFA5;--pk:#FF6B9D;--am:#FFB627;
+  --bg:#07071A;--bg2:#0D0D2B;--bg3:#12123A;--bg4:#181850;
+  --tx:#F0F0FF;--tx2:#9090C0;--tx3:#5A5A90;
+  --bd:rgba(124,92,252,.15);--bd2:rgba(124,92,252,.3);--bd3:rgba(124,92,252,.55);
+  --r:12px;--rl:20px;--rxl:28px;--rxx:999px;
+  --sh:0 8px 40px rgba(0,0,0,.6);--glow:0 0 40px rgba(124,92,252,.35);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(124,92,252,.35);color:#fff}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--p);border-radius:3px}
+
+/* utils */
+.con{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1rem,5vw,2.5rem)}
+.sec{padding-block:clamp(4rem,8vw,7rem);position:relative;overflow:hidden}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--c);padding:.28rem .9rem;background:rgba(0,229,204,.08);border:1px solid rgba(0,229,204,.25);border-radius:var(--rxx);margin-bottom:.85rem}
+.sh{text-align:center;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.sh h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-.025em;margin-bottom:.85rem}
+.sh p{font-size:clamp(.9rem,1.4vw,1.05rem);color:var(--tx2);max-width:580px;margin-inline:auto;line-height:1.75}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:600;text-decoration:none;border:none;cursor:pointer;border-radius:var(--rxx);transition:all .3s;white-space:nowrap;letter-spacing:.01em}
+.bsm{padding:.5rem 1.2rem;font-size:.85rem}.bmd{padding:.7rem 1.6rem;font-size:.9rem}.blg{padding:.85rem 2rem;font-size:1rem}.bxl{padding:1rem 2.4rem;font-size:1.05rem}
+.bpri{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 4px 20px rgba(124,92,252,.4)}
+.bpri:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(124,92,252,.6)}
+.bsec{background:rgba(124,92,252,.1);color:var(--tx);border:1px solid var(--bd2)}
+.bsec:hover{background:rgba(124,92,252,.2);transform:translateY(-2px)}
+.bout{background:transparent;color:var(--tx);border:1.5px solid var(--bd2)}
+.bout:hover{background:rgba(124,92,252,.1);border-color:var(--p);transform:translateY(-2px)}
+.bwh{background:#fff;color:var(--bg);font-weight:700}
+.bwh:hover{background:#eeeeff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,255,255,.2)}
+.bfull{width:100%;justify-content:center;border-radius:var(--rl)}
+
+/* NAV */
+#topnav{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;display:flex;align-items:center;background:rgba(7,7,26,.7);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--bd);transition:all .3s}
+#topnav.sc{background:rgba(7,7,26,.95);box-shadow:var(--sh)}
+.ni{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1rem,5vw,2.5rem);display:flex;align-items:center;gap:1.5rem}
+.nbrand{display:flex;align-items:center;gap:.6rem;text-decoration:none;flex-shrink:0}
+.nlogo{width:34px;height:34px;background:linear-gradient(135deg,var(--p),var(--c));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.nname{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:1.25rem;color:var(--tx);letter-spacing:-.02em}
+.nname span{color:var(--c)}
+.nlinks{display:flex;align-items:center;gap:.1rem;margin-left:auto}
+.na{padding:.4rem .8rem;font-size:.875rem;font-weight:500;color:var(--tx2);text-decoration:none;border-radius:var(--rxx);transition:.2s}
+.na:hover{color:var(--tx);background:rgba(124,92,252,.1)}
+.na.on{color:var(--p2);background:rgba(124,92,252,.12);font-weight:600}
+.nacts{display:flex;gap:.6rem;align-items:center;flex-shrink:0}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem;margin-left:.5rem}
+.burger span{display:block;width:22px;height:2px;background:var(--tx);border-radius:2px;transition:.2s}
+.mobile-nav{display:none;position:fixed;top:68px;left:0;right:0;z-index:999;background:rgba(7,7,26,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:1rem;flex-direction:column;gap:.2rem}
+.mobile-nav .na{padding:.7rem 1rem;border-radius:var(--rl)}
+
+/* PAGE HERO */
+.ph{padding-top:calc(68px + clamp(3rem,8vw,5rem));padding-bottom:clamp(3rem,7vw,5rem);position:relative;overflow:hidden;text-align:center;background:var(--bg)}
+.ph-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% -10%,rgba(124,92,252,.18) 0%,transparent 65%)}
+.ph-tag{margin-bottom:1.25rem}
+.ph h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-.03em;margin-bottom:1.1rem;position:relative}
+.ph p{font-size:clamp(.95rem,1.5vw,1.15rem);color:var(--tx2);max-width:600px;margin-inline:auto;line-height:1.75;position:relative;margin-bottom:2rem}
+.ph .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding-top:3.5rem}
+.fg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+.fbrand p{font-size:.85rem;color:var(--tx3);line-height:1.7;max-width:260px;margin-top:.75rem;margin-bottom:1.25rem}
+.socs{display:flex;gap:.5rem}
+.soc{width:34px;height:34px;border-radius:50%;background:var(--bg3);border:1px solid var(--bd);color:var(--tx2);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;text-decoration:none;transition:.2s}
+.soc:hover{background:var(--p);color:#fff;border-color:var(--p);transform:translateY(-2px)}
+.fc h4{font-family:'Space Grotesk',sans-serif;font-size:.78rem;font-weight:700;color:var(--tx);margin-bottom:.9rem;letter-spacing:.08em;text-transform:uppercase}
+.fc a{display:block;font-size:.83rem;color:var(--tx3);text-decoration:none;margin-bottom:.45rem;transition:color .2s}
+.fc a:hover{color:var(--tx)}
+.fbot{border-top:1px solid var(--bd);padding-block:1.25rem;display:flex;justify-content:space-between;font-size:.78rem;color:var(--tx3);flex-wrap:wrap;gap:.5rem}
+
+/* Scroll reveal */
+.sr{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.sr.vi{opacity:1;transform:translateY(0)}
+
+/* orbs */
+.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:of 10s ease-in-out infinite;pointer-events:none}
+@keyframes of{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-25px) scale(1.04)}}
+
+/* responsive */
+@media(max-width:1024px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nlinks,.nacts .bout{display:none}.burger{display:flex}.fg{grid-template-columns:1fr}}
+
+/* B2B Hero */
+.b2b-hero{padding-top:calc(68px + 4rem);padding-bottom:4rem;background:linear-gradient(135deg,#06061A,#0c0c28,#08101a);text-align:center;position:relative;overflow:hidden}
+.b2b-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% -5%,rgba(124,92,252,.2) 0%,transparent 65%)}
+.b2b-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:900;letter-spacing:-.03em;margin-bottom:1rem;position:relative}
+.b2b-hero p{font-size:clamp(.95rem,1.5vw,1.15rem);color:var(--tx2);max-width:600px;margin-inline:auto;position:relative;margin-bottom:2rem}
+.b2b-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--bd);position:relative}
+.b2bs{text-align:center}.b2bs strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:900;color:var(--tx)}.b2bs span{font-size:.8rem;color:var(--tx3)}
+/* Solution sections */
+.sol{padding-block:clamp(4rem,7vw,6rem);border-bottom:1px solid var(--bd)}
+.sol-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.sol-inner.rev{direction:rtl}.sol-inner.rev>*{direction:ltr}
+.sol-badge{display:inline-flex;align-items:center;gap:.6rem;padding:.35rem 1rem;border-radius:var(--rxx);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.25rem;border:1px solid}
+.sol h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.6rem);font-weight:900;letter-spacing:-.025em;margin-bottom:.85rem}
+.sol p{font-size:.98rem;color:var(--tx2);line-height:1.8;margin-bottom:1.75rem}
+.sol-list{list-style:none;display:flex;flex-direction:column;gap:.65rem;margin-bottom:2rem}
+.sol-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem}
+.sol-list li::before{content:'✦';flex-shrink:0;margin-top:.15rem;font-size:.75rem}
+.sol-card{background:var(--bg3);border:1px solid var(--bd2);border-radius:var(--rxl);padding:2.5rem;position:relative;overflow:hidden}
+.sol-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--sgc,rgba(124,92,252,.08)),transparent 60%)}
+.sol-card-icon{font-size:4rem;margin-bottom:1.5rem;display:block}
+.sol-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:.5rem}
+.sol-card-sub{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tx3);margin-bottom:1.25rem}
+.sol-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{font-size:.75rem;font-weight:600;padding:.3rem .75rem;background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:var(--rxx);color:var(--tx2)}
+/* Process */
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:relative}
+.proc-steps::before{content:'';position:absolute;top:2.25rem;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--p),var(--c));border-radius:1px;z-index:0}
+.ps{text-align:center;position:relative;z-index:1}
+.ps-num{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--c));display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:800;color:#fff;margin:0 auto 1.25rem;box-shadow:var(--glow)}
+.ps h4{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.ps p{font-size:.82rem;color:var(--tx2);line-height:1.6}
+/* Contact form */
+.contact-form{background:var(--bg3);border:1px solid var(--bd2);border-radius:var(--rxl);padding:2.5rem;max-width:640px;margin:0 auto}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg-full{grid-column:1/-1}
+.form-group{display:flex;flex-direction:column;gap:.4rem}
+.form-group label{font-size:.82rem;font-weight:600;color:var(--tx2)}
+.form-group input,.form-group select,.form-group textarea{background:rgba(0,0,0,.3);border:1px solid var(--bd2);border-radius:var(--r);padding:.75rem 1rem;color:var(--tx);font-size:.9rem;font-family:'Inter',sans-serif;transition:.25s;outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(124,92,252,.15)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group select option{background:var(--bg3)}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:760px;margin-inline:auto}
+.faq-item{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--rl);overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.5rem;cursor:pointer;font-weight:600;font-family:'Space Grotesk',sans-serif;font-size:.95rem;gap:1rem;transition:.25s}
+.faq-q:hover{color:var(--p2)}
+.faq-arr{flex-shrink:0;transition:transform .3s;color:var(--p)}
+.faq-item.open .faq-arr{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:.88rem;color:var(--tx2);line-height:1.75}
+.faq-item.open .faq-a{display:block}
+@media(max-width:1024px){.sol-inner,.sol-inner.rev{grid-template-columns:1fr;direction:ltr}.proc-steps{grid-template-columns:repeat(2,1fr)}.proc-steps::before{display:none}.form-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.proc-steps{grid-template-columns:1fr}.b2b-stats{gap:1.5rem}}
+</style>
+</head>
+<body>
+
+<header id="topnav">
+  <div class="ni">
+    <a href="/index.html" class="nbrand"><div class="nlogo">🤖</div><span class="nname">Token<span>School</span></span></a>
+    <nav class="nlinks">
+      <a href="/index.html" class="na ">Home</a>
+      <a href="/classes.html" class="na ">Classes</a>
+      <a href="/curriculum.html" class="na ">Curriculum</a>
+      <a href="/b2b.html" class="na on">B2B</a>
+      <a href="/trainer.html" class="na ">Trainer</a>
+      <a href="/pricing.html" class="na ">Pricing</a>
+    </nav>
+    <div class="nacts">
+      <a href="/pricing.html" class="btn bout bsm">Login</a>
+      <a href="/pricing.html" class="btn bpri bsm">Get Started →</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mnav">
+    <a href="/index.html" class="na ">Home</a>
+    <a href="/classes.html" class="na ">Classes</a>
+    <a href="/curriculum.html" class="na ">Curriculum</a>
+    <a href="/b2b.html" class="na on">B2B Solutions</a>
+    <a href="/trainer.html" class="na ">Our Trainer</a>
+    <a href="/pricing.html" class="na ">Pricing</a>
+    <div style="display:flex;gap:.75rem;margin-top:.5rem;padding:.5rem 0">
+      <a href="/pricing.html" class="btn bout bmd" style="flex:1;justify-content:center">Login</a>
+      <a href="/pricing.html" class="btn bpri bmd" style="flex:1;justify-content:center">Get Started</a>
+    </div>
+  </nav>
+</header>
+
+<section class="b2b-hero">
+  <div class="con" style="position:relative;z-index:1">
+    <div class="tag" style="margin-bottom:1.25rem">B2B Solutions</div>
+    <h1>Bring <span style="background:linear-gradient(135deg,var(--p2),var(--c));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AI Education</span><br>to Every Institution</h1>
+    <p>Token School partners with schools, colleges, and organisations across India to deliver world-class AI curriculum. Trained and led by <strong style="color:var(--tx)">Nirav Trivedi</strong> (BTech, MBA).</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="#contact" class="btn bpri blg">Get a Custom Quote →</a>
+      <a href="#schools" class="btn bsec blg">View Solutions</a>
+    </div>
+    <div class="b2b-stats">
+      <div class="b2bs"><strong data-t="50">0</strong><span>Schools & Colleges</span></div>
+      <div class="b2bs"><strong data-t="12000">0</strong><span>Students Trained</span></div>
+      <div class="b2bs"><strong data-t="98">0</strong><span>% Satisfaction</span></div>
+      <div class="b2bs"><strong data-t="8">0</strong><span>Years Experience</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHOOLS -->
+<section class="sol" id="schools" style="background:var(--bg)">
+<div class="con">
+  <div class="sol-inner">
+    <div class="sr">
+      <div class="sol-badge" style="color:#6C63FF;background:rgba(108,99,255,.08);border-color:rgba(108,99,255,.3)">🏫 For Schools</div>
+      <h2>Complete AI Program<br>for Your School</h2>
+      <p>Integrate a CBSE-aligned AI curriculum seamlessly into your school. From Class 6 to 10, Token School provides everything — content, training, dashboards, and ongoing support.</p>
+      <ul class="sol-list" style="--lc:#6C63FF">
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Full CBSE AI syllabus (Code 417) for Class 9 & 10</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>AI literacy programme for Classes 6–8</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Teacher training & certification by Nirav Trivedi</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Student progress dashboard for principals</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Parent progress reports (weekly)</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Custom school branding on platform</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Dedicated school success manager</li>
+        <li style="color:var(--tx)"><span style="color:#6C63FF">✦</span>Flexible bulk licensing from 50 students</li>
+      </ul>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="#contact" class="btn bpri bmd">Get School Quote →</a>
+        <a href="/pricing.html" class="btn bsec bmd">View Pricing</a>
+      </div>
+    </div>
+    <div class="sr">
+      <div class="sol-card" style="--sgc:rgba(108,99,255,.1)">
+        <span class="sol-card-icon">🏫</span>
+        <h3>School AI Partner</h3>
+        <div class="sol-card-sub">What's Included</div>
+        <div class="sol-chips">
+          <span class="chip">CBSE AI 417</span><span class="chip">Classes 6–10</span><span class="chip">Teacher Training</span>
+          <span class="chip">Admin Dashboard</span><span class="chip">Parent Portal</span><span class="chip">Lab Activities</span>
+          <span class="chip">500+ Videos</span><span class="chip">100+ Labs</span><span class="chip">Exam Prep</span>
+          <span class="chip">Custom Branding</span><span class="chip">24/7 Support</span><span class="chip">Certificates</span>
+        </div>
+        <div style="margin-top:1.75rem;padding:1.25rem;background:rgba(108,99,255,.08);border-radius:var(--rl);border:1px solid rgba(108,99,255,.2)">
+          <div style="font-size:.75rem;color:var(--tx3);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem">Pricing starts at</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:900;color:var(--tx)">₹299<span style="font-size:1rem;color:var(--tx2);font-weight:500">/student/year</span></div>
+          <div style="font-size:.78rem;color:var(--tx3);margin-top:.25rem">Min. 50 students · Custom quotes available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- COLLEGES -->
+<section class="sol" id="colleges" style="background:var(--bg2)">
+<div class="con">
+  <div class="sol-inner rev">
+    <div class="sr">
+      <div class="sol-badge" style="color:#00E5CC;background:rgba(0,229,204,.08);border-color:rgba(0,229,204,.3)">🎓 For Colleges</div>
+      <h2>Industry-Ready AI<br>for Your Campus</h2>
+      <p>Upskill your students with AI knowledge that makes them job-ready. Certificate programmes, elective modules, and full semester courses designed for UG and PG levels.</p>
+      <ul class="sol-list">
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>UG/PG AI elective module (2/4 credits)</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Short-term certificate courses (6–12 weeks)</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Industry-relevant project tracks (ML, CV, NLP)</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Co-branded certificates signed by Nirav Trivedi</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Faculty enablement & upskilling workshops</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Placement-ready AI portfolio for students</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Guest lectures & industry connects</li>
+        <li style="color:var(--tx)"><span style="color:#00E5CC">✦</span>Research collaboration possibilities</li>
+      </ul>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="#contact" class="btn bpri bmd">Get College Quote →</a>
+        <a href="/trainer.html" class="btn bsec bmd">Meet the Trainer</a>
+      </div>
+    </div>
+    <div class="sr">
+      <div class="sol-card" style="--sgc:rgba(0,229,204,.08)">
+        <span class="sol-card-icon">🎓</span>
+        <h3>College AI Partner</h3>
+        <div class="sol-card-sub">Programme Options</div>
+        <div style="display:flex;flex-direction:column;gap:.85rem;margin-bottom:1.5rem">
+          <div style="padding:1rem;background:rgba(0,229,204,.05);border:1px solid rgba(0,229,204,.2);border-radius:var(--r)">
+            <div style="font-weight:700;font-family:'Space Grotesk',sans-serif;margin-bottom:.25rem">Certificate Programme</div>
+            <div style="font-size:.82rem;color:var(--tx2)">6–12 weeks · Industry-ready skills · Co-branded cert</div>
+          </div>
+          <div style="padding:1rem;background:rgba(0,229,204,.05);border:1px solid rgba(0,229,204,.2);border-radius:var(--r)">
+            <div style="font-weight:700;font-family:'Space Grotesk',sans-serif;margin-bottom:.25rem">Semester Elective (2/4 credit)</div>
+            <div style="font-size:.82rem;color:var(--tx2)">Full AI course mapped to your syllabus</div>
+          </div>
+          <div style="padding:1rem;background:rgba(0,229,204,.05);border:1px solid rgba(0,229,204,.2);border-radius:var(--r)">
+            <div style="font-weight:700;font-family:'Space Grotesk',sans-serif;margin-bottom:.25rem">Bootcamp / Workshop</div>
+            <div style="font-size:.82rem;color:var(--tx2)">1–5 day intensive · Hands-on projects</div>
+          </div>
+        </div>
+        <div style="font-size:.78rem;color:var(--tx3);text-align:center">Custom pricing based on cohort size & duration</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- DIRECT TRAINING -->
+<section class="sol" id="direct" style="background:var(--bg);border-bottom:none">
+<div class="con">
+  <div class="sol-inner">
+    <div class="sr">
+      <div class="sol-badge" style="color:#FF6B9D;background:rgba(255,107,157,.08);border-color:rgba(255,107,157,.3)">💻 Direct Training</div>
+      <h2>Learn AI Directly<br>from Nirav Trivedi</h2>
+      <p>No institution needed — join live cohort batches, self-paced courses, or book personalised 1-on-1 mentoring directly with Nirav. Flexible timing, real projects, guaranteed results.</p>
+      <ul class="sol-list">
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Weekend live cohort batches (small groups of 15)</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Self-paced 24/7 platform access</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>1-on-1 mentoring sessions with Nirav</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Real-world AI project guidance</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Doubt resolution within 2 hours</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Certificate of completion signed by Nirav</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Lifetime access to recorded sessions</li>
+        <li style="color:var(--tx)"><span style="color:#FF6B9D">✦</span>Community of AI learners (Discord)</li>
+      </ul>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="/pricing.html" class="btn bpri bmd">View Pricing & Enroll →</a>
+        <a href="/trainer.html" class="btn bsec bmd">About Nirav</a>
+      </div>
+    </div>
+    <div class="sr">
+      <div class="sol-card" style="--sgc:rgba(255,107,157,.08)">
+        <span class="sol-card-icon">💻</span>
+        <h3>Direct Online Training</h3>
+        <div class="sol-card-sub">Upcoming Batches</div>
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.5rem">
+          <div style="padding:1rem;background:rgba(255,107,157,.05);border:1px solid rgba(255,107,157,.2);border-radius:var(--r);display:flex;justify-content:space-between;align-items:center">
+            <div><div style="font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:.95rem">AI Fundamentals (Class 6–8)</div><div style="font-size:.78rem;color:var(--tx2)">Sat–Sun · 10am–12pm · 8 weeks</div></div>
+            <span style="font-size:.7rem;font-weight:700;color:#00E5CC;background:rgba(0,229,204,.1);padding:.2rem .6rem;border-radius:var(--rxx);white-space:nowrap">3 seats left</span>
+          </div>
+          <div style="padding:1rem;background:rgba(255,107,157,.05);border:1px solid rgba(255,107,157,.2);border-radius:var(--r);display:flex;justify-content:space-between;align-items:center">
+            <div><div style="font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:.95rem">ML with Python (Class 9–10)</div><div style="font-size:.78rem;color:var(--tx2)">Sat · 2pm–5pm · 10 weeks</div></div>
+            <span style="font-size:.7rem;font-weight:700;color:#00E5CC;background:rgba(0,229,204,.1);padding:.2rem .6rem;border-radius:var(--rxx);white-space:nowrap">Enrolling</span>
+          </div>
+          <div style="padding:1rem;background:rgba(255,107,157,.05);border:1px solid rgba(255,107,157,.2);border-radius:var(--r);display:flex;justify-content:space-between;align-items:center">
+            <div><div style="font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:.95rem">Advanced AI (Class 11–12)</div><div style="font-size:.78rem;color:var(--tx2)">Sun · 11am–2pm · 12 weeks</div></div>
+            <span style="font-size:.7rem;font-weight:700;color:var(--am);background:rgba(255,182,39,.1);padding:.2rem .6rem;border-radius:var(--rxx);white-space:nowrap">Starting Nov</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn bpri bfull bmd">Reserve Your Seat →</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" style="background:var(--bg2)">
+<div class="con">
+  <div class="sh sr">
+    <div class="tag">How It Works</div>
+    <h2>Getting Started is Simple</h2>
+    <p>From enquiry to first AI class — we make the onboarding smooth and fast.</p>
+  </div>
+  <div class="proc-steps">
+    <div class="ps sr"><div class="ps-num">01</div><h4>Submit Enquiry</h4><p>Fill the contact form with your institution details and requirements.</p></div>
+    <div class="ps sr"><div class="ps-num">02</div><h4>Consultation Call</h4><p>Nirav Trivedi personally hops on a call to understand your needs.</p></div>
+    <div class="ps sr"><div class="ps-num">03</div><h4>Custom Proposal</h4><p>Receive a tailored curriculum plan, pricing, and implementation roadmap.</p></div>
+    <div class="ps sr"><div class="ps-num">04</div><h4>Go Live!</h4><p>Platform setup, teacher training, and the first AI class — within 2 weeks.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact" style="background:var(--bg)">
+<div class="con">
+  <div class="sh sr">
+    <div class="tag">Get In Touch</div>
+    <h2>Request a Custom Quote</h2>
+    <p>Tell us about your institution and we'll create a personalised AI curriculum proposal for you.</p>
+  </div>
+  <div class="contact-form sr">
+    <form id="b2b-form">
+      <div class="form-grid">
+        <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Nirav Trivedi" required/></div>
+        <div class="form-group"><label>Email Address *</label><input type="email" placeholder="name@institution.edu" required/></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 98765 43210"/></div>
+        <div class="form-group"><label>Institution Name *</label><input type="text" placeholder="Delhi Public School, Mumbai" required/></div>
+        <div class="form-group"><label>Institution Type *</label>
+          <select required>
+            <option value="">Select type...</option>
+            <option>CBSE School (Classes 6–8)</option>
+            <option>CBSE School (Classes 9–10)</option>
+            <option>CBSE School (All Classes)</option>
+            <option>College / University</option>
+            <option>EdTech / Training Institute</option>
+            <option>Corporate / Organisation</option>
+            <option>Individual / Parent</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Number of Students</label>
+          <select>
+            <option value="">Select range...</option>
+            <option>1–25 students</option>
+            <option>25–100 students</option>
+            <option>100–500 students</option>
+            <option>500+ students</option>
+          </select>
+        </div>
+        <div class="form-group fg-full"><label>Message / Requirements</label><textarea placeholder="Tell us what you're looking for — which classes, subjects, timeline, specific requirements..."></textarea></div>
+      </div>
+      <div style="margin-top:1.25rem"><button type="submit" class="btn bpri bfull blg">Send Enquiry →</button></div>
+      <p style="text-align:center;font-size:.78rem;color:var(--tx3);margin-top:.85rem">We respond within 24 hours. Nirav personally reviews every enquiry.</p>
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" style="background:var(--bg2)">
+<div class="con">
+  <div class="sh sr"><div class="tag">FAQ</div><h2>Frequently Asked Questions</h2></div>
+  <div class="faq-list">
+    <div class="faq-item sr"><div class="faq-q">Is the content CBSE aligned? <span class="faq-arr">▾</span></div><div class="faq-a">Yes — all content is fully aligned with the CBSE curriculum, including the AI subject (Code 417) for Classes 9 and 10. The Courses for Classes 6–8 follow a CBSE-appropriate difficulty progression.</div></div>
+    <div class="faq-item sr"><div class="faq-q">How long does school onboarding take? <span class="faq-arr">▾</span></div><div class="faq-a">Typically 1–2 weeks from signing the agreement. This includes platform setup, teacher accounts, student onboarding, and an initial teacher training session with Nirav.</div></div>
+    <div class="faq-item sr"><div class="faq-q">Do teachers need AI knowledge to teach this? <span class="faq-arr">▾</span></div><div class="faq-a">No prior AI knowledge is required! Nirav Trivedi personally conducts teacher training sessions as part of our school partnership. Teachers receive detailed lesson plans, answer keys, and ongoing support.</div></div>
+    <div class="faq-item sr"><div class="faq-q">Can we customise the curriculum? <span class="faq-arr">▾</span></div><div class="faq-a">Absolutely. For institutional partnerships, we offer custom curriculum mapping to your existing timetable and learning objectives. Contact us and Nirav will personally review your requirements.</div></div>
+    <div class="faq-item sr"><div class="faq-q">What is the minimum cohort size for institutional pricing? <span class="faq-arr">▾</span></div><div class="faq-a">Institutional pricing starts from 50 students for schools. For colleges, we offer per-student pricing from 30 students. Smaller groups can opt for our direct training programmes.</div></div>
+    <div class="faq-item sr"><div class="faq-q">Is there a trial period for schools? <span class="faq-arr">▾</span></div><div class="faq-a">Yes — we offer a 2-week free pilot for serious institutional enquiries, covering up to 30 students. Reach out via the contact form to arrange a pilot.</div></div>
+  </div>
+</div>
+</section>
+
+
+<footer>
+<div class="con">
+  <div class="fg">
+    <div class="fbrand">
+      <a href="/index.html" class="nbrand"><div class="nlogo">🤖</div><span class="nname">Token<span>School</span></span></a>
+      <p>India's premier AI curriculum for CBSE students. Taught by Nirav Trivedi (BTech, MBA). Classes 6–12.</p>
+      <div class="socs">
+        <a href="#" class="soc">𝕏</a><a href="#" class="soc">📷</a><a href="#" class="soc">▶</a><a href="#" class="soc">in</a>
+      </div>
+    </div>
+    <div class="fc">
+      <h4>Classes</h4>
+      <a href="/classes.html">Class 6 — Beginners</a><a href="/classes.html">Class 7 — Explorers</a>
+      <a href="/classes.html">Class 8 — Builders</a><a href="/classes.html">Class 9 — Innovators</a>
+      <a href="/classes.html">Class 10 — Champions</a><a href="/classes.html">Class 11 — Scientists</a>
+      <a href="/classes.html">Class 12 — Masters</a>
+    </div>
+    <div class="fc">
+      <h4>B2B Solutions</h4>
+      <a href="/b2b.html">For Schools</a><a href="/b2b.html">For Colleges</a>
+      <a href="/b2b.html">Direct Training</a><a href="/trainer.html">Our Trainer</a>
+      <a href="/b2b.html#contact">Contact Us</a><a href="/pricing.html">Pricing</a>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <a href="/trainer.html">About Nirav</a><a href="#">Blog</a>
+      <a href="/b2b.html#contact">Partner With Us</a><a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a><a href="/b2b.html#contact">Support</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2025 Token School. All rights reserved. | CBSE AI Curriculum by Nirav Trivedi</p>
+    <p>Built with ❤️ in India 🇮🇳</p>
+  </div>
+</div>
+</footer>
+<script>
+// Nav
+const tn=document.getElementById('topnav');
+window.addEventListener('scroll',()=>tn.classList.toggle('sc',scrollY>40),{passive:true});
+// Burger
+const bg=document.getElementById('burger'),mn=document.getElementById('mnav');
+if(bg&&mn)bg.addEventListener('click',()=>{const o=mn.style.display==='flex';mn.style.display=o?'none':'flex';bg.querySelectorAll('span').forEach((s,i)=>{if(o){s.style.transform='';s.style.opacity=''}else{if(i===0)s.style.transform='rotate(45deg) translate(5px,5px)';if(i===1)s.style.opacity='0';if(i===2)s.style.transform='rotate(-45deg) translate(5px,-5px)'}})});
+// SR
+const sro=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){e.target.style.transitionDelay=i*.055+'s';e.target.classList.add('vi');sro.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.sr').forEach(el=>sro.observe(el));
+// Counters
+const co=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,t=+el.dataset.t,s=performance.now();const r=now=>{const p=Math.min((now-s)/1800,1),ea=1-Math.pow(1-p,3);el.textContent=Math.floor(ea*t).toLocaleString('en-IN');if(p<1)requestAnimationFrame(r);else el.textContent=t.toLocaleString('en-IN')};requestAnimationFrame(r);co.unobserve(el)})},{threshold:.5});
+document.querySelectorAll('[data-t]').forEach(e=>co.observe(e));
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open'));if(!wasOpen)item.classList.add('open')})});
+// Form
+const form=document.getElementById('b2b-form');if(form)form.addEventListener('submit',e=>{e.preventDefault();form.innerHTML='<div style="text-align:center;padding:2rem"><div style="font-size:3rem;margin-bottom:1rem">✅</div><h3 style="font-family:Space Grotesk,sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:.5rem">Thank you!</h3><p style="color:var(--tx2)">We have received your enquiry and Nirav will contact you within 24 hours.</p></div>'});
+</script>
+</body>
+</html>
